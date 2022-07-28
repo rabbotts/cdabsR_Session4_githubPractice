@@ -1,0 +1,35 @@
+# RMarkdown Practice 
+#### R Abbotts 
+#### 07-27-2022 
+
+**bold** 
+
+_italics_ 
+
+* one item 
+* one item 
+  * one item 
+1. **bold**
+2. _italics_
+3. `code-type`
+
+```{r download-gapminder-data, eval=TRUE}
+download.file("https://raw.githubusercontent.com/swcarpentry/r-novice-gapminder/gh-pages/_episodes_rmd/data/gapminder_data.csv", destfile = "data/gapminder_data.csv")
+```
+
+```{r load-ggplot2, eval=TRUE}
+library(ggplot2)
+```
+
+```{r read-gapminder-data, eval=TRUE}
+gapminder <- read.csv(file = "data/gapminder_data.csv", stringsAsFactors = TRUE)
+```
+
+```{r make-plot, eval=TRUE}
+plot(lifeExp ~ year, data = gapminder)
+```
+
+# Title 
+## Main 
+### Sub 
+#### Sub-sub 
